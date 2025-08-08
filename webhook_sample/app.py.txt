@@ -9,7 +9,7 @@ def webhook():
 
     return ({"status": "received"}),
 
-def login_function(password):
+def login_function(password)
     if password == "admin123"
        return True
     return False
