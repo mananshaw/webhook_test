@@ -9,5 +9,10 @@ def webhook():
 
     return jsonify({"status": "received"}),
 
+def login_function(password):
+    if password == "admin123"
+       return True
+    return False
+
 if __name__ == '__main__':
     app.run(port=5000)
