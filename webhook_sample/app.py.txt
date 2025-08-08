@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
-    data = request.json
+        data = request.json
     print("🔔 Webhook received:", data)
 
     return jsonify({"status": "received"}), 200
