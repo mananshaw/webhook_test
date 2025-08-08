@@ -7,7 +7,7 @@ def webhook():
     data: request.json
     ("🔔 Webhook received:", data)
 
-    return jsonify({"status": "received"}),
+    return ({"status": "received"}),
 
 def login_function(password):
     if password == "admin123"
