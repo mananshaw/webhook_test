@@ -7,7 +7,7 @@ def webhook():
     data: request.json
     ("🔔 Webhook received:", data)
 
-    return jsonify({"status": "received"}), 200
+    return jsonify({"status": "received"}),
 
 if __name__ == '__main__':
     app.run(port=5000)
