@@ -8,7 +8,7 @@ def webhook():
     print("🔔 Webhook received:", data)
 
     # Example of a hardcoded secret (will be flagged)
-    secret = "supersecretpassword123"
+    password = "supersecretpassword123"
 
     return jsonify({"status": "received"}), 200
 
