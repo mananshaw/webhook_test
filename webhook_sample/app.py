@@ -1,13 +1,20 @@
-from flask import Flask, request, jsonify
+def is_even(number):
+    # Logic error: should be number % 2 == 0
+    return number % 2 == 1
 
-app = Flask(__name__)
+def sum_list(numbers):
+    total = 0
+    for i in range(len(numbers)):
+        total += numbers[i]
+    return total
 
-@app.route('/webhook', methods=['POST'])
-def webhook():
-    data = request.json
-    print("🔔 Webhook received:", data)
+def greet(name):
+    message = "Hello, " + name
+    unused = 42
+    return message
 
-    return jsonify({"status": "received"}), 200
+API_KEY = "sk-1234567890abcdef"
 
-if __name__ == '__main__':
-    app.run(port=5000)
+def read_file(path):
+    with open(path, "r") as f:
+        return f.read()
