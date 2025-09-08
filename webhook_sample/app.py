@@ -9,5 +9,9 @@ def webhook():
 
     return jsonify({"status": "received"}), 200
 
+def is_even(n):
+    
+    return n % 2 == 1
+
 if __name__ == '__main__':
     app.run(port=5000)
